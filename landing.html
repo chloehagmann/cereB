@@ -18,19 +18,34 @@
         body{
             margin: 0px;
         }
+        h1 {
+            text-align: center;
+        }
+
     </style>
     <title>Landing Page: cereB</title>
 </head>
 <body>
     <div class="circle">
         <!-- Form -->
-        <div class="input-group mb-3" id="form">
-            <span class="input-group-text" id="basic-addon1 name">Enter Name: </span>
-            <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
-        </div>
+        <form action="" method="" class="col-12" id="form">
+            <div class="row">
+                <!-- Name Box-->
+                <div class="col-8 mt-4">
+                    <input type="text" name="" class="form-control" id="name-input" placeholder="Enter Your Name">
+                </div>
+                <!-- Button -->
+                <div class="col-3 mt-4">
+                    <button type="submit" class="btn btn-primary btn-block">Enter</button>
+                </div>
+            </div>
+        </form>
         <!-- Welcome Brain -->
-        <img src="">
-        <h1>Welcome, <span id="name-display">Stranger</span>!</h1>
+        <div id="welcome">
+            <img id="brainLogo" src="images/logo.png">
+            <h1>Welcome, <span id="name-display">Stranger</span>!</h1>
+        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
