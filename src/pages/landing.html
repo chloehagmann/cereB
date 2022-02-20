@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="../styles/navbarstyle.css">
 
     <style>
         .circle{
@@ -88,6 +87,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            align-items: center;
             width: 100%;
         }
         .column {
@@ -96,41 +96,197 @@
             flex-basis: 100%;
             flex: 1;
         }
-        #navbar-logo {
-            width: 100px;
-            margin: 0px;
-            padding: 0px;
+        .myButton {
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+            background:linear-gradient(to bottom, #ffffff 50%, #e6e6e6 100%);
+            background-color:#ffffff;
+            border-radius:6px;
+            border:1px solid #ffffff;
+            display:inline-block;
+            cursor:pointer;
+            color:#000000;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 20px;
+            text-decoration:none;
+            text-shadow:0px -1px 0px #5b6178;
+            text-align: center;
         }
+        .myButton:hover {
+            background:linear-gradient(to bottom, #e6e6e6 5%, #ffffff 100%);
+            background-color:#e6e6e6;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+
+        .navbar-brand
+        {
+            background: rgba(228, 228, 228, 0.31);
+        }
+        body {
+            /* background-color: rgb(51, 51, 51);
+            color: white; */
+            font-family: Helvetica Neue, Arial, sans;
+            font-weight: 200;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 200;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 1.3em;
+        }
+
+        button:disabled {
+            color: rgba(128,128,128,32);
+        }
+
+        .controls-block {
+            display: inline-block;
+            margin: 0 10px 0 10px;
+        }
+
+        /*.controls-block > * {
+            border: 1px dotted orange;
+        }*/
+
+        .controls-label {
+            font-size: .8em;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        .control-value {
+            font-size: 2em;
+        }
+
+        .controls-block > button {
+            background-color: transparent;
+            color: white;
+            font-size: 1.5em;
+            min-width: 32px;
+            vertical-align: bottom;
+        }
+
+        #clock-container {
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid;
+            border-color: rgb(154, 202, 39);
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            display: table;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #clock-content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #clock-counter {
+            font-size: 5em;
+            text-align: center;
+            margin: auto;
+            -webkit-font-feature-settings: 'tnum';
+            -moz-font-feature-settings: 'tnum';
+            -ms-font-feature-settings: 'tnum';
+        }
+
+        #clock-container > button {
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 1em;
+            min-width: 95px;
+        }
+
+        #clock-label {
+            margin-top: -20px;
+            font-size: 2em;
+        }
+
+        #outer {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #ccc;
+            overflow: hidden;
+            
+            position: relative;
+            
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        #inner, #inner div {
+            z-index: -1;
+            width: 100%;
+            overflow: hidden;
+            left: -1px;
+            position: absolute;
+        }
+
+        #inner {
+            border-top-width: 0;
+            background-color: rgb(154, 202, 39);
+
+            bottom: 0;
+            height: 0%;
+        }
+        
     </style>
-    <title> 🧠 cereB </title>
+    <title> 🧠 cereB ⭐️</title>
 </head>
 <body>
     <!-- nav bar with logo and timer -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="landing.html">
-                <img id="navbar-logo" src="/images/cereb-name.png">
-              </a>
+          <a class="navbar-brand" href="landing.html"> 
+              <img src="/images/cereb-name.png">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="landing.html">Home</a>
-              <a class="nav-link" href="teams.html">Team</a>
-              <a class="nav-link">Timer</a>
-              <form class="form-inline">
-                <input id="name-input" class="form-control mr-sm-2" type="search" placeholder="Enter Name Here" aria-label="Search">
-              </form>
+              <a class="nav-link" href="landing.html">cereB</a>
+              <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+              <a class="nav-link" href="">Timer</a>
             </div>
           </div>
         </div>
     </nav>
 
     <div class="circle">
+        <!-- Form -->
+        <form action="" method="" class="col-12" id="form">
+            <div class="row">
+                <!-- Name Box-->
+                <div class="col-8 mt-4">
+                    <input type="text" name="" class="form-control" id="name-input" placeholder="Enter Your Name">
+                </div>
+                <!-- Button -->
+                <div class="col-3 mt-4">
+                    <button type="submit" class="btn btn-primary btn-block">Enter</button>
+                </div>
+            </div>
+        </form>
         <!-- Welcome Brain -->
         <div id="welcome">
-            <h1>Welcome, <span id="name-display">friend!</span>!</h1>
+            <h1>Welcome, <span id="name-display">Stranger</span>!</h1>
             <div id="image" class="row align-items-center">
                 <img id="brainLogo" src="/images/logo.png">
             </div>
@@ -160,7 +316,6 @@
         <div class='some-page-wrapper'>
             <div class='row'>
                 <div class='column'>
-<<<<<<< HEAD
                     <div class="container">
 
                         <div id="controls">
@@ -190,18 +345,24 @@
                         </div>
                     
                     </div>
-=======
-                    <p>TIMER</p>
->>>>>>> 5469d1280a03a29788e7235d35ff4e98f5e7fde6
                 </div>
                 <div class='column'>
-                    <p>LEFT BRAIN</p>
+                    <div id="imageLB" class="row align-items-center">
+                        <img id="leftBrain" src="/images/left-brain.png">
+                    </div>
                 </div>
                 <div class='column'>
-                    <p>RIGHT BRAIN</p>
+                    <div id="imageRB" class="row align-items-center">
+                        <img id="leftBrain" src="/images/right-brain.png">
+                    </div>
                 </div>
                 <div class='column'>
-                    <p>PAGES MENU</p>
+                    <a href="meditation.html" class="myButton">Guided Meditation</a><br>
+                    <a href="yoga.html" class="myButton">Yoga Practice</a><br>
+                    <a href="music.html" class="myButton">Music</a><br>
+                    <a href="cooking.html" class="myButton">Cooking</a><br>
+                    <a href="journaling.html" class="myButton">Journaling</a><br>
+                    <a href="reading.html" class="myButton">Reading</a>
                 </div>
             </div>
         </div>
@@ -217,6 +378,8 @@
 
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/src/timer.js"></script>
     <script src="/src/main.js"></script>
 </body>
 </html>
