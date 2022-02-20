@@ -18,6 +18,10 @@ document.querySelector("#form").onsubmit = function(event) {
     document.querySelector("#form").style.display = "none";
 }
 
+document.querySelector("#downArrow").onclick = function(event) {
+    document.getElementById("todo").scrollIntoView(true);
+}
+
 let todoArray = [];
 
 let storedTodo = localStorage.getItem("todo");
@@ -41,13 +45,16 @@ document.querySelector("#todo-form").onsubmit = function(event) {
 
     document.querySelector("#list").innerHTML = "";
     for (let i=0; i < todoArray.length; i++) {
-        document.querySelector("#list").innerHTML += `<li class=${todoArray[i]}>${todoArray[i]}</li`;
+        document.querySelector("#list").innerHTML += `<li>${todoArray[i]}</li>`;
     }
 }
 
-document.querySelector("li").onclick = function() {
-    this.
-}
-document.querySelector("#downArrow").onclick = function(event) {
-    document.getElementById("todo").scrollIntoView(true);
+let listArray = document.querySelectorAll("li");
+console.log(listArray);
+
+for (let i=0; i < listArray.length; i++) {
+    listArray[i].onclick = function () {
+        this.style.backgroundColor = "grey";
+        this.remove();
+    }
 }
