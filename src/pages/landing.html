@@ -80,6 +80,21 @@
             padding-left: 15px;
             margin: 5px;
         }
+        .some-page-wrapper {
+            margin: 15px;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
 
         .navbar-brand
         {
@@ -147,6 +162,37 @@
 
             </div>
         </div>
+        <div class="row align-items-center">
+            <h2><br><br>Activate your Brain</h2>
+            <button id="downArrow" type="button" class="btn">↯</button>
+        </div>
+
+        <div class='some-page-wrapper'>
+            <div class='row'>
+                <div class='column'>
+                    <p>TIMER</p>
+                </div>
+                <div class='column'>
+                    <p>LEFT BRAIN</p>
+                </div>
+                <div class='column'>
+                    <p>RIGHT BRAIN</p>
+                </div>
+                <div class='column'>
+                    <p>PAGES MENU</p>
+                </div>
+            </div>
+        </div>
+
+            <!-- <div id="image" class="row align-items-center">
+                <img id="brainLogo" src="/images/logo.png">
+            </div>
+            <div id="image" class="row align-items-center">
+                <img id="brainLogo" src="/images/logo.png">
+            </div>
+         -->
+        
+
         
     </div>
     <script src="/src/main.js"></script>
