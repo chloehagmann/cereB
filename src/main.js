@@ -22,21 +22,21 @@ document.querySelector("#downArrow").onclick = function(event) {
     document.getElementById("todo").scrollIntoView(true);
 }
 
-let todoArray = [];
-
 let storedTodo = localStorage.getItem("todo");
 if (storedTodo) {
     let todos = JSON.parse(storedTodo);
-    todoArray = todos;
+    for (let i=0; i < todos.length; i++) {
+        document.querySelector("#list").innerHTML += `<li class="listItem">${todos[i]}</li>`;
+    }
 }
+
+let todoArray = [];
 
 document.querySelector("#todo-form").onsubmit = function(event) {
     event.preventDefault();
 
     console.log("submittodo");
-    
     let todoInput = document.querySelector("#todo-input").value.trim();
-    
     todoArray.push(todoInput);
 
     let todoString = JSON.stringify(todoArray);
@@ -44,17 +44,14 @@ document.querySelector("#todo-form").onsubmit = function(event) {
     localStorage.setItem("todo", todoString);
 
     document.querySelector("#list").innerHTML = "";
+
     for (let i=0; i < todoArray.length; i++) {
-        document.querySelector("#list").innerHTML += `<li>${todoArray[i]}</li>`;
+        document.querySelector("#list").innerHTML += `<li class="listItem">${todoArray[i]}</li>`;
     }
+    
+    document.querySelector("#todo-input").value = "";
 }
 
-let listArray = document.querySelectorAll("li");
-console.log(listArray);
 
-for (let i=0; i < listArray.length; i++) {
-    listArray[i].onclick = function () {
-        this.style.backgroundColor = "grey";
-        this.remove();
-    }
-}
+
+
