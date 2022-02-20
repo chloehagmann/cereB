@@ -11,7 +11,7 @@
     <style>
         .circle{
             background: rgb(176,201,213);
-            background: radial-gradient(circle, rgb(181, 201, 154) 33%, rgb(207, 225, 185) 58%,  rgb(221, 231, 208) 65%, rgb(199, 218, 213) 100%);
+            background: radial-gradient(circle, rgb(181, 201, 154) 31%, rgb(207, 225, 185) 55%,  rgb(221, 231, 208) 65%, rgb(184, 206, 200) 100%);
             height: 1000px; 
             padding: 15px;
         }
@@ -36,17 +36,19 @@
              padding: 0px;
         }
         .navbar {
-             background-color: rgba(225,215,205,1);
+          background: radial-gradient(circle, rgb(221, 231, 208) 45%, rgb(184, 206, 200) 100%);
         }
         .navbar-brand
         {
-            background: rgba(228, 228, 228, 0.31);
+          background: gradient(circle, rgb(221, 231, 208) 5%, rgb(184, 206, 200) 100%);
         }
         li {
             margin: 5px;
+            margin-top: 10px;
         }
         form {
-            margin-left: 15px;
+            margin: 15px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -75,24 +77,32 @@
             Choose from the recommended prompts below to begin your break.
         </em>
         </div>
-        <ul>
-            <li>​​Describe yourself using the first 10 words that come to mind. Then, list 10 words that you’d like to use to describe yourself.</li>
-            <li>List a few ways to transform those descriptions into reality.</li>
-            <li>Finish this sentence: “My life would be incomplete without …”</dl>
-            <li>How do you prioritize self-care?</dl>
-            <li>What aspects of your life are you most grateful for?</li>
-            <li>Write a short love letter to some object or place that makes you happy.</li>
-            <li>List 10 things that inspire or motivate you.</li>
-            <li>What three things would you share with your teenage self? </li>
-            <li>What three questions would you want to ask an older version of yourself?</li>
-            <li>What do you look forward to most in the future?</li>
-            <li>What do you most want to accomplish in life?</li>
-            <li>When do I feel most in tune with myself?</li>
-        </ul>
-        <form action="/url" method="GET">
-            <p><strong>Enter your response below:</strong></p>
-            <textarea name="Your Message" rows="10" cols="30"></textarea><br>
-        </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <ul>
+                        <li>​​Describe yourself using the first 10 words that come to mind. Then, list 10 words that you’d like to use to describe yourself.</li>
+                        <li>List a few ways to transform those descriptions into reality.</li>
+                        <li>Finish this sentence: “My life would be incomplete without …”</dl>
+                        <li>How do you prioritize self-care?</dl>
+                        <li>What aspects of your life are you most grateful for?</li>
+                        <li>Write a short love letter to some object or place that makes you happy.</li>
+                        <li>List 10 things that inspire or motivate you.</li>
+                        <li>What three things would you share with your teenage self? </li>
+                        <li>What three questions would you want to ask an older version of yourself?</li>
+                        <li>What do you look forward to most in the future?</li>
+                        <li>What do you most want to accomplish in life?</li>
+                        <li>When do I feel most in tune with myself?</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <form action="/url" method="GET">
+                        <p><strong>Enter your response below:</strong></p>
+                        <textarea name="Your Message" rows="10" cols="30"></textarea><br>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
