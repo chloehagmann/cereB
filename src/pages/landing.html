@@ -1,5 +1,5 @@
 <!-- landing paggeeeeee! -->
-<!-- hello world - this is ally -->
+<!-- i hope this works -->
 <!-- Landing Page for cereB -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,8 +20,36 @@
         }
         h1 {
             text-align: center;
+            margin: 20px;
+            font-size: 60px;
         }
-
+        #image {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            width: 80%;
+        }
+        #downArrow {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            font-style: italic;
+        }
+        #todo {
+            margin-top: 1000px;
+        }
+        
     </style>
     <title>Landing Page: cereB</title>
 </head>
@@ -32,7 +60,7 @@
             <div class="row">
                 <!-- Name Box-->
                 <div class="col-8 mt-4">
-                    <input type="text" name="" class="form-control" id="name-input" placeholder="Enter Your Name">
+                    <input type="text" name="" class="form-control" id="name-input" placeholder="First, Enter Your Name">
                 </div>
                 <!-- Button -->
                 <div class="col-3 mt-4">
@@ -42,8 +70,18 @@
         </form>
         <!-- Welcome Brain -->
         <div id="welcome">
-            <img id="brainLogo" src="images/logo.png">
             <h1>Welcome, <span id="name-display">Stranger</span>!</h1>
+            <div id="image" class="row align-items-center">
+                <img id="brainLogo" src="/images/logo.png">
+            </div>
+            <div class="row align-items-center">
+                <h2>Get Started :)</h2>
+                <button id="downArrow" type="button" class="btn">↯</button>
+            </div>
+        </div>
+        <!-- To-Do List -->
+        <div id="todo">
+            fkdlag;jda
         </div>
     </div>
     <script src="main.js"></script>
