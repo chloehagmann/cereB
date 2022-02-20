@@ -95,52 +95,42 @@
             flex-basis: 100%;
             flex: 1;
         }
-
-        .navbar-brand
-        {
-            background: rgba(228, 228, 228, 0.31);
+        #navbar-logo {
+            width: 100px;
+            margin: 0px;
+            padding: 0px;
         }
         
     </style>
-    <title> 🧠 cereB ⭐️</title>
+    <title> 🧠 cereB </title>
 </head>
 <body>
     <!-- nav bar with logo and timer -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="landing.html"> 
-              <img src="/images/cereb-name.png">
-          </a>
+            <a class="navbar-brand" href="landing.html">
+                <img id="navbar-logo" src="/images/cereb-name.png">
+              </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="landing.html">cereB</a>
-              <a class="nav-link active" aria-current="page" href="team.html">Team</a>
-              <a class="nav-link" href="">Timer</a>
+              <a class="nav-link active" aria-current="page" href="landing.html">Home</a>
+              <a class="nav-link" href="teams.html">Team</a>
+              <a class="nav-link">Timer</a>
+              <form class="form-inline">
+                <input id="name-input" class="form-control mr-sm-2" type="search" placeholder="Enter Name Here" aria-label="Search">
+              </form>
             </div>
           </div>
         </div>
     </nav>
 
     <div class="circle">
-        <!-- Form -->
-        <form action="" method="" class="col-12" id="form">
-            <div class="row">
-                <!-- Name Box-->
-                <div class="col-8 mt-4">
-                    <input type="text" name="" class="form-control" id="name-input" placeholder="Enter Your Name">
-                </div>
-                <!-- Button -->
-                <div class="col-3 mt-4">
-                    <button type="submit" class="btn btn-primary btn-block">Enter</button>
-                </div>
-            </div>
-        </form>
         <!-- Welcome Brain -->
         <div id="welcome">
-            <h1>Welcome, <span id="name-display">Stranger</span>!</h1>
+            <h1>Welcome, <span id="name-display">friend!</span>!</h1>
             <div id="image" class="row align-items-center">
                 <img id="brainLogo" src="/images/logo.png">
             </div>
