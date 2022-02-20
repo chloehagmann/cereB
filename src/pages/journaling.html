@@ -36,17 +36,19 @@
              padding: 0px;
         }
         .navbar {
-             background-color: rgba(225,215,205,1);
+            background-color: rgba(225,215,205,1);
         }
         .navbar-brand
         {
-            background: rgba(228, 228, 228, 0.31);
+            background:rgba(225,215,205,1);
         }
         li {
             margin: 5px;
+            margin-top: 10px;
         }
         form {
-            margin-left: 15px;
+            margin: 15px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -75,24 +77,32 @@
             Choose from the recommended prompts below to begin your break.
         </em>
         </div>
-        <ul>
-            <li>​​Describe yourself using the first 10 words that come to mind. Then, list 10 words that you’d like to use to describe yourself.</li>
-            <li>List a few ways to transform those descriptions into reality.</li>
-            <li>Finish this sentence: “My life would be incomplete without …”</dl>
-            <li>How do you prioritize self-care?</dl>
-            <li>What aspects of your life are you most grateful for?</li>
-            <li>Write a short love letter to some object or place that makes you happy.</li>
-            <li>List 10 things that inspire or motivate you.</li>
-            <li>What three things would you share with your teenage self? </li>
-            <li>What three questions would you want to ask an older version of yourself?</li>
-            <li>What do you look forward to most in the future?</li>
-            <li>What do you most want to accomplish in life?</li>
-            <li>When do I feel most in tune with myself?</li>
-        </ul>
-        <form action="/url" method="GET">
-            <p><strong>Enter your response below:</strong></p>
-            <textarea name="Your Message" rows="10" cols="30"></textarea><br>
-        </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <ul>
+                        <li>​​Describe yourself using the first 10 words that come to mind. Then, list 10 words that you’d like to use to describe yourself.</li>
+                        <li>List a few ways to transform those descriptions into reality.</li>
+                        <li>Finish this sentence: “My life would be incomplete without …”</dl>
+                        <li>How do you prioritize self-care?</dl>
+                        <li>What aspects of your life are you most grateful for?</li>
+                        <li>Write a short love letter to some object or place that makes you happy.</li>
+                        <li>List 10 things that inspire or motivate you.</li>
+                        <li>What three things would you share with your teenage self? </li>
+                        <li>What three questions would you want to ask an older version of yourself?</li>
+                        <li>What do you look forward to most in the future?</li>
+                        <li>What do you most want to accomplish in life?</li>
+                        <li>When do I feel most in tune with myself?</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <form action="/url" method="GET">
+                        <p><strong>Enter your response below:</strong></p>
+                        <textarea name="Your Message" rows="10" cols="30"></textarea><br>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
