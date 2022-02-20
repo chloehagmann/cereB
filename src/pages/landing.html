@@ -49,8 +49,18 @@
             margin-bottom: 0px;
             font-style: italic;
         }
-        #todo {
+        #todo-container {
             margin-top: 40px;
+            width: 36%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #todo-container #todolabel {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            font-weight: bold;
         }
         
     </style>
@@ -83,12 +93,18 @@
             </div>
         </div>
         <!-- To-Do List -->
-        <div id="todo-continer">
-            <div id="todo">
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-                  </div>
+        <div id="todo-container">
+            <form action="" method="" class="col-12" id="todo-form">
+                <div id="todo">
+                    <label id="todolabel" for="todo-input" class="form-label">Enter To-Do's: </label>
+                    <input type="text" class="form-control" id="todo-input" placeholder="ex) Finish Hackathon Project">
+                    
+                </div>
+            </form>
+            <div id="list">
+                <ul>
+                    <li>Todo</li>
+                </ul>
             </div>
         </div>
     </div>

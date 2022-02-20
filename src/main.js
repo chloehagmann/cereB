@@ -18,6 +18,34 @@ document.querySelector("#form").onsubmit = function(event) {
     document.querySelector("#form").style.display = "none";
 }
 
+let todoArray = [];
+
+let storedTodo = localStorage.getItem("todo");
+if (storedTodo) {
+    let todos = JSON.parse(storedTodo);
+    todoArray = todos;
+}
+
+document.querySelector("#todo-form").onsubmit = function(event) {
+    event.preventDefault();
+
+    console.log("submittodo");
+    
+    let todoInput = document.querySelector("#todo-input").value.trim();
+    
+    todoArray.push(todoInput);
+
+    let todoString = JSON.stringify(todoArray);
+
+    localStorage.setItem("todo", todoString);
+
+    document.querySelector("#todo-input").innerHTML = "";
+
+    for (let i=0; i < todoArray.length; i++) {
+        document.querySelector("#list").innerHTML += `<li>${todoArray[i]}</li`;
+    }
+}
+
 document.querySelector("#downArrow").onclick = function(event) {
     document.getElementById("todo").scrollIntoView(true);
 }
