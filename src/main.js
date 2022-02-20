@@ -54,3 +54,17 @@ document.querySelector("#todo-form").onsubmit = function(event) {
     
     document.querySelector("#todo-input").value = "";
 }
+
+// ONCLICK
+document.querySelector("#imageRB").onclick = function() {
+    document.querySelector(".circle").style.background = "rgb(238,174,202)";
+    document.querySelector(".circle").style.background = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)";
+    document.querySelector(".links").style.visibility = "visible";
+}
+
+document.querySelector("#imageLB").onclick = function() {
+    document.querySelector(".circle").style.background = "rgb(219,238,174)";
+    document.querySelector(".circle").style.background = "radial-gradient(circle, rgba(219,238,174,1) 18%, rgba(238,96,96,1) 100%)";
+    document.querySelector(".links").style.visibility = "hidden";
+
+}
