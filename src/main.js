@@ -19,5 +19,5 @@ document.querySelector("#form").onsubmit = function(event) {
 }
 
 document.querySelector("#downArrow").onclick = function(event) {
-    document.getElementById("todo").scrollIntoView();
+    document.getElementById("todo").scrollIntoView(true);
 }
