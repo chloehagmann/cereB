@@ -51,11 +51,3 @@ document.querySelector("#todo-form").onsubmit = function(event) {
     
     document.querySelector("#todo-input").value = "";
 }
-
-
-for (let i=0; i < listArray.length; i++) {
-    listArray[i].onclick = function () {
-        this.style.backgroundColor = "grey";
-        this.remove();
-    }
-}
