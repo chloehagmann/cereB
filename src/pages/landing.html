@@ -40,7 +40,7 @@
             margin-bottom: 40px;
             width: 30%;
         }
-        #downArrow {
+        .arrow {
             text-align: center;
             font-size: 60px;
             font-weight: bold;
@@ -53,25 +53,27 @@
             font-style: italic;
         }
         #todo-container {
-            margin-top: 40px;
+            margin-top: 200px;
             width: 36%;
             margin-left: auto;
             margin-right: auto;
             padding: 20px;
             background-color: aliceblue;
             border-radius: 25px;
-
+            font-size: 30px;
         }
-        #todo-container #todolabel {
+        #todolabel {
             text-align: center;
             margin-left: auto;
             margin-right: auto;
             font-size: 20px;
             font-weight: bold;
+            font-size: 40px;
         }
         #list {
             margin-top: 10px;
             padding: 5px;
+            text-align:start;
         }
         li {
             border-radius: 25px;
@@ -135,6 +137,7 @@
         }
 
         h1 {
+            margin-top: 100px;
             font-weight: 200;
         }
 
@@ -250,10 +253,17 @@
              width: 100px;
              margin: 0px;
              padding: 0px;
-         }
-         .navbar {
+        }
+        .navbar {
              background-color: rgba(225,215,205,1);
-         }
+        }
+        #arrowTo {
+            margin-top: 580px;
+        }
+        #activate {
+            margin-top: 50px;
+        }
+
     </style>
     <title> 🧠 cereB ⭐️</title>
 </head>
@@ -289,7 +299,7 @@
             </div>
             <div class="row align-items-center">
                 <h2>Get Started :)</h2>
-                <button id="downArrow" type="button" class="btn">↯</button>
+                <button id="downArrow1" type="button" class="btn arrow">↯</button>
             </div>
         </div>
         <!-- To-Do List -->
@@ -306,13 +316,13 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <h2><br><br>Activate your Brain</h2>
-            <button id="downArrow" type="button" class="btn">↯</button>
+            <h2 id="activate">Activate your Brain</h2>
+            <button id="downArrow2" type="button" class="btn arrow">↯</button>
         </div>
 
-        <div class='some-page-wrapper'>
-            <div class='row'>
-                <div class='column'>
+        <div class="some-page-wrapper">
+            <div id="arrowTo" class="row">
+                <div class="column">
                     <div class="container">
 
                         <div id="controls">

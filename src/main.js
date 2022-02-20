@@ -18,8 +18,11 @@ document.querySelector(".form-inline").onsubmit = function(event) {
     document.querySelector(".form-inline").style.display = "none";
 }
 
-document.querySelector("#downArrow").onclick = function(event) {
-    document.getElementById("todo").scrollIntoView(true);
+document.querySelector("#downArrow1").onclick = function(event) {
+    document.getElementById("todo-container").scrollIntoView(true);
+}
+document.querySelector("#downArrow2").onclick = function(event) {
+    document.getElementById("arrowTo").scrollIntoView(true);
 }
 
 let storedTodo = localStorage.getItem("todo");
