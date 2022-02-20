@@ -39,13 +39,15 @@ document.querySelector("#todo-form").onsubmit = function(event) {
 
     localStorage.setItem("todo", todoString);
 
-    document.querySelector("#todo-input").innerHTML = "";
-
+    document.querySelector("#list").innerHTML = "";
     for (let i=0; i < todoArray.length; i++) {
-        document.querySelector("#list").innerHTML += `<li>${todoArray[i]}</li`;
+        document.querySelector("#list").innerHTML += `<li class=${todoArray[i]}>${todoArray[i]}</li`;
     }
 }
 
+document.querySelector("li").onclick = function() {
+    this.
+}
 document.querySelector("#downArrow").onclick = function(event) {
     document.getElementById("todo").scrollIntoView(true);
 }
