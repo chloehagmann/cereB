@@ -2,10 +2,10 @@ let storedName = localStorage.getItem("name");
 if (storedName) {
     // Grab the values stored in web storage and change the name
     document.querySelector("#name-display").innerHTML = storedName;
-    document.querySelector("#form").style.display = "none";
+    document.querySelector(".form-inline").style.display = "none";
 }
 
-document.querySelector("#form").onsubmit = function(event) {
+document.querySelector(".form-inline").onsubmit = function(event) {
     event.preventDefault();
     console.log("submitted");
 
@@ -15,7 +15,7 @@ document.querySelector("#form").onsubmit = function(event) {
 
     document.querySelector("#name-display").innerHTML = nameInput;
 
-    document.querySelector("#form").style.display = "none";
+    document.querySelector(".form-inline").style.display = "none";
 }
 
 document.querySelector("#downArrow").onclick = function(event) {
