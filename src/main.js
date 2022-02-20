@@ -53,7 +53,6 @@ document.querySelector("#todo-form").onsubmit = function(event) {
 }
 
 
-<<<<<<< HEAD
 for (let i=0; i < listArray.length; i++) {
     listArray[i].onclick = function () {
         this.style.backgroundColor = "grey";
@@ -147,7 +146,3 @@ var pomodoro = {
 window.onload = function(){
   pomodoro.init();
 };
-=======
-
-
->>>>>>> 9821a9b6f700cd4bb8b2da34cbd60dc009df637c
