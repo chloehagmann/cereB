@@ -15,7 +15,7 @@
             background: rgb(176,201,213);
             background: radial-gradient(circle, rgba(176,201,213,1) 33%, rgba(216,154,182,1) 58%, rgb(233, 197, 105) 65%, rgba(225,215,205,1) 100%);
             padding: 15px;
-            position: relative;
+            /* position: relative; */
         }
         body{
             margin: 0px;
@@ -80,87 +80,25 @@
             padding-left: 15px;
             margin: 5px;
         }
-        #container{
-        /* border:1px solid #333; */
-        border-radius :20px;
-        width:400px;
-        margin:20px auto;
-        padding:20px;
-        text-align:center;
-        /* background : white; */
-        position: absolute;
-        left: 40px;
-        top: 270px;
-        }
 
-        #timer{ 
-        color:gray; 
-        font-size:50px; 
-        margin:10px auto;
-        border : 5px solid gray;
-        border-radius:50%;
-        width:200px;
-        height:200px;
-        overflow:hidden;
-        position:relative;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        cursor:default;
-        }
-
-        #time{
-        margin-top:60px;
-        z-index : 1;
-        position:relative;
-        }
-        #type{
-            font-size: 40px;
-            left: 15px;
-        }
-
-        #filler{
-        background : aliceblue;
-        height: 0px;
-        width: 200px;
-        position:absolute;
-        bottom:0;
-        }
-
-        #buttons button { 
-        background:#4da6ff; 
-        border:black solid 1px; 
-        color:#fff; 
-        cursor:pointer; 
-        padding:5px; 
-        width:90px; 
-        margin:10px auto;
-        font-size:14px;
-        height : 50px;
-        border-radius : 50px;
-        }
-
-        #buttons button#shortBreak{
-        background : rgba(216,154,182,1);
-        border: black 1px solid;
-        }
-
-        #buttons button#longBreak{
-        background :rgba(176,201,213,1);
-        border: black solid 1px;
-        }
-
-        #buttons button#stop{
-        background : rgb(233, 197, 105);
-        border: black solid 1px;
-        }
-        
         
     </style>
     <title>Landing Page: cereB</title>
 </head>
 <body>
+
+    <!-- nav bar with logo and timer -->
+    <div className="navbar">
+        <a href="/">
+          <img src="/images/favicon.ico" height="auto" width= "auto" minwidth= "0" minheight= "0">
+          </img>
+        <div>
+            <a className="timer" href="">
+            Enter timer here
+            </a>
+        </div>
+    </div>
+
     <div class="circle">
         <!-- Form -->
         <form action="" method="" class="col-12" id="form">
@@ -196,31 +134,10 @@
                 </div>
             </form>
             <div id="list">
-                <li>Leetcode</li>
-                <li>Do hackathon</li>
-                <li>CSCI104 Homework</li>
+
             </div>
         </div>
-        <div id="pomodoro-app">
-            <div id="container">
-              <div id="timer">
-                <div id="time">
-                  <span id="minutes">25</span>
-                  <span id="colon">:</span>
-                  <span id="seconds">00</span>
-                  <!-- <span id="type">Left</span> -->
-                </div>
-                <div id="filler"></div>
-              </div>
-          
-              <div id="buttons">
-                <button id="work">Right Brain</button>
-                <button id="shortBreak">Left Brain</button>
-                <button id="longBreak">Long Break</button>
-                <button id="stop">Stop</button>
-              </div>
-            </div>
-          </div>
+        
     </div>
     <script src="/src/main.js"></script>
 </body>

@@ -18,11 +18,19 @@
             width: 50%;
             padding: 10px;
         }
+        .container {
+            display: flex;
+        }
+        .container>* {
+            margin: 0 10px;
+            flex: 1;
+        }
         body{
             margin: 0px;
         }
         h3{
             font-size: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -33,12 +41,17 @@
         <em>Following a guided meditation will provide your with a sesne of relaxation and peacefulness. <br>
             Choose from the recommended meditations below to begin your break.
         </em>
-            <h3><strong>5 minutes</strong></h3>
+    </div>
+    <div class="container">
+        <h3><strong>5 minutes</strong></h3>
+        <h3><strong>10 minutes</strong></h3>
+        <h3><strong>15 minutes</strong></h3>
+    </div>
+    <div class="container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/zSkFFW--Ma0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3><strong>10 minutes</strong></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ZToicYcHIOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3><strong>15 minutes</strong></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/W8a3T8pI9Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     </div>
 </body>
 
