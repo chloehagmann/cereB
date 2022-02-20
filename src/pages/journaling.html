@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <style>
         .circle{
@@ -28,60 +29,68 @@
             font-size: 20px;
         }
         #navbar-logo {
-            width: 100px;
-            margin: 0px;
-            padding: 0px;
+             width: 100px;
+             margin: 0px;
+             padding: 0px;
+        }
+        .navbar {
+             background-color: rgba(225,215,205,1);
+        }
+        .navbar-brand
+        {
+            background: rgba(228, 228, 228, 0.31);
+        }
+        li {
+            margin: 5px;
+        }
+        form {
+            margin-left: 15px;
         }
     </style>
 </head>
 <body>
-    <!-- nav bar with logo and timer -->
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="landing.html">
-            <img id="navbar-logo" src="/images/cereb-name.png">
+    <!-- nav bar with logo  -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="landing.html"> 
+                <img id="navbar-logo" src="/images/cereb-name.png">
             </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-link" href="landing.html">Home</a>
-            <a class="nav-link" href="teams.html">Team</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="landing.html">Home</a>
+                <a class="nav-link" href="teams.html">Team</a>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-  </nav>
+    </nav>
     <div class="circle">
-    <div class="center">
+        <div class="center">
         <h1 class="col-12 mt-4">Journaling</h1>
         <em>Journaling is a way to help clear and calm the mind. <br>
             Choose from the recommended prompts below to begin your break.
         </em>
         </div>
-        <div class="a">
-            <dl>​​Describe yourself using the first 10 words that come to mind. Then, list 10 words that you’d like to use to describe yourself. <br> 
-                <div class="a">
-                List a few ways to transform those descriptions into reality.
-            </dl>
-            <dl>Finish this sentence: “My life would be incomplete without …”</dl>
-            <dl>How do you prioritize self-care?</dl>
-            <dl>What aspects of your life are you most grateful for?</dl>
-            <dl>Write a short love letter to some object or place that makes you happy.</dl>
-            <dl>List 10 things that inspire or motivate you.</dl>
-            <dl>What three things would you share with your teenage self? <br> 
-                <div class="a">
-                What three questions would you want to ask an older version of yourself?</dl>
-            <dl>What do you look forward to most in the future?</dl>
-            <dl>What do you most want to accomplish in life?</dl>
-            <dl>When do I feel most in tune with myself? </dl>
-
-            <form action="/url" method="GET">
-                <p>Enter your response below:</p>
-                <textarea name="Your Message" rows="10" cols="30"></textarea><br>
-            </form>
-        </div>
-    </div>
+        <ul>
+            <li>​​Describe yourself using the first 10 words that come to mind. Then, list 10 words that you’d like to use to describe yourself.</li>
+            <li>List a few ways to transform those descriptions into reality.</li>
+            <li>Finish this sentence: “My life would be incomplete without …”</dl>
+            <li>How do you prioritize self-care?</dl>
+            <li>What aspects of your life are you most grateful for?</li>
+            <li>Write a short love letter to some object or place that makes you happy.</li>
+            <li>List 10 things that inspire or motivate you.</li>
+            <li>What three things would you share with your teenage self? </li>
+            <li>What three questions would you want to ask an older version of yourself?</li>
+            <li>What do you look forward to most in the future?</li>
+            <li>What do you most want to accomplish in life?</li>
+            <li>When do I feel most in tune with myself?</li>
+        </ul>
+        <form action="/url" method="GET">
+            <p><strong>Enter your response below:</strong></p>
+            <textarea name="Your Message" rows="10" cols="30"></textarea><br>
+        </form>
 </body>
 
 </html>
