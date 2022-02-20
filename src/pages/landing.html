@@ -163,16 +163,21 @@
 <body>
 
     <!-- nav bar with logo and timer -->
-    <div className="navbar">
-        <a href="/">
-          <img src="/images/favicon.ico" height="auto" width= "auto" minwidth= "0" minheight= "0">
-          </img>
-        <div>
-            <a className="timer" href="">
-            Enter timer here
-            </a>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="landing.html">cereB</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="landing.html">cereB</a>
+              <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+              <a class="nav-link" href="#">About</a>
+            </div>
+          </div>
         </div>
-    </div>
+    </nav>
 
     <div class="circle">
         <!-- Form -->
